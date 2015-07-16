@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="#FFF"
+    app:cardCornerRadius="2dp"
+    app:cardPreventCornerOverlap="true"
+
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_list_item_gifimg"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cursor_drawable" />
+
+        <TextView
+            android:id="@+id/main_list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/main_list_item_gifimg"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/main_list_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_below="@id/main_list_item_title"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/main_list_item_gifimg"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:layout_marginBottom="15dp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
